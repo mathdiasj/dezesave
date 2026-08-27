@@ -42,7 +42,8 @@ The Witcher 3 consegue juntar tudo isso em uma experiência que parece muito mai
     category: 'Review',
     tags: ['RPG', 'Mundo Aberto', 'Fantasia'],
     author: {
-      name: 'Editor dezeSAVE',
+      name: 'Matheus Dias',
+      avatar: '/images/matheus.jpg',
     },
     publishedAt: '2026-08-26T10:00:00Z',
     updatedAt: '2026-08-26T10:00:00Z',
@@ -92,7 +93,8 @@ Bom, essa análise não traz aspectos técnicos, spoilers e reclamações de alg
     category: 'Review',
     tags: ['RPG', 'Mundo Aberto', 'Fantasia'],
     author: {
-      name: 'Editor dezeSAVE',
+      name: 'Matheus Dias',
+      avatar: '/images/matheus.jpg',
     },
     publishedAt: '2026-08-26T10:00:00Z',
     updatedAt: '2026-08-26T10:00:00Z',
@@ -135,7 +137,8 @@ Bom, essa análise não traz aspectos técnicos, spoilers e reclamações de alg
     category: 'Review',
     tags: ['Terror', 'Ação', 'Remake'],
     author: {
-      name: 'Editor dezeSAVE',
+      name: 'Matheus Dias',
+      avatar: '/images/matheus.jpg',
     },
     publishedAt: '2026-08-26T16:00:00Z',
     updatedAt: '2026-08-26T16:00:00Z',
@@ -194,7 +197,8 @@ Songs of the Past também apresentará novos monstros, mutações e uma nova arm
     category: 'Notícia',
     tags: ['RPG', 'Ação', 'Remaster', 'CD Project red'],
     author: {
-      name: 'Editor dezeSAVE',
+      name: 'Matheus Dias',
+      avatar: '/images/matheus.jpg',
     },
     publishedAt: '2026-08-27T16:00:00Z',
     updatedAt: '2026-08-27T16:00:00Z',

@@ -56,9 +56,19 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
         
         <div className="flex items-center gap-6 border-t border-white/10 pt-6">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-blue-900 flex items-center justify-center font-oswald text-white">
-              {post.author.name.charAt(0)}
-            </div>
+            {post.author.avatar ? (
+              <Image 
+                src={post.author.avatar} 
+                alt={post.author.name} 
+                width={40} 
+                height={40} 
+                className="w-10 h-10 rounded-full object-cover"
+              />
+            ) : (
+              <div className="w-10 h-10 rounded-full bg-blue-900 flex items-center justify-center font-oswald text-white">
+                {post.author.name.charAt(0)}
+              </div>
+            )}
             <div>
               <p className="font-bold font-inter text-sm">{post.author.name}</p>
               <p className="text-gray-500 font-inter text-xs">
