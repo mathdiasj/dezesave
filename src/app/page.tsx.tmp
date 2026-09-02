@@ -1,4 +1,4 @@
-import { getFeaturedPost, getLatestPosts, getReviews, getNews, getRetroPosts } from "@/lib/data";
+import { getFeaturedPost, getLatestPosts, getReviews, getNews } from "@/lib/data";
 import { HeroCard, PostCard, ReviewCard, NewsListCard } from "@/components/ui/Cards";
 import { FadeIn } from "@/components/ui/FadeIn";
 import Link from "next/link";
@@ -9,7 +9,6 @@ export default function Home() {
   const latestPosts = getLatestPosts(3);
   const reviews = getReviews().slice(0, 4);
   const news = getNews().slice(0, 5);
-  const retro = getRetroPosts().slice(0, 3);
 
   return (
     <div className="pt-24 pb-12">
@@ -68,26 +67,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Retro Section */}
-      <section className="container mx-auto px-4 lg:px-8 mb-24">
-        <div className="flex items-end justify-between mb-8 border-b border-white/10 pb-4">
-          <div>
-            <h2 className="font-oswald text-4xl uppercase tracking-wider">Matando a Saudade</h2>
-            <p className="text-gray-400 font-inter mt-1">Revisitando os maiores clássicos.</p>
-          </div>
-          <Link href="/retro" className="hidden md:flex items-center gap-2 text-blue-500 hover:text-white transition-colors font-oswald tracking-widest text-sm">
-            BAÚ COMPLETO <ArrowRight size={16} />
-          </Link>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {retro.map((post, i) => (
-            <FadeIn key={post.id} delay={i * 0.1}>
-              <PostCard post={post} />
-            </FadeIn>
-          ))}
-        </div>
-      </section>
-
       {/* News Section */}
       <section className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-12">
@@ -114,7 +93,7 @@ export default function Home() {
               </h3>
               <div className="flex flex-col gap-5">
                 {latestPosts.map((post, index) => (
-                  <Link key={post.id} href={`/${post.type === 'review' ? 'save' : post.type === 'retro' ? 'retro' : 'noticias'}/${post.slug}`} className="group flex gap-4">
+                  <Link key={post.id} href={`/${post.type === 'review' ? 'save' : 'noticias'}/${post.slug}`} className="group flex gap-4">
                     <span className="font-oswald text-4xl font-bold text-white/10 group-hover:text-blue-500/30 transition-colors">
                       0{index + 1}
                     </span>

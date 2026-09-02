@@ -204,7 +204,30 @@ Songs of the Past também apresentará novos monstros, mutações e uma nova arm
     updatedAt: '2026-08-27T16:00:00Z',
     featured: false,
     type: 'news',
+  },
+  {
+    id: '7',
+    slug: 'super-mario-world',
+    title: 'Super Mario World: A magia que não envelhece',
+    excerpt: 'Revisitando o maior clássico do Super Nintendo e como seu level design continua sendo uma aula até hoje.',
+    content: `
+      <p>Matar a saudade de Super Mario World é como voltar para a casa dos pais. Aquele cheiro familiar, as cores vibrantes, a trilha sonora que instantaneamente te joga de volta pros anos 90. Foi exatamente isso que senti ao ligar o emulador no último fim de semana.</p>
+      <p>O que mais impressiona em Mario World, jogando hoje em dia, é como o jogo **não envelheceu um único dia** em termos de jogabilidade. Os controles são tão precisos que muitos jogos modernos de plataforma falham em replicar. A curva de aprendizado é invisível: a primeira fase te ensina tudo o que você precisa saber sem soltar um único tutorial na tela.</p>
+      <p>E a nostalgia bateu forte na primeira vez que montei no Yoshi. Aquele som clássico do Yoshi engolindo uma maçã ou cuspindo fogo ainda é tão gratificante quanto eu lembrava. Fica claro porque a Nintendo é reverenciada por seu level design: cada segredo, cada fase da Star Road, tudo foi colocado ali com uma intenção cirúrgica.</p>
+      <p>Super Mario World não é apenas um jogo antigo, é uma cápsula do tempo de uma época onde a criatividade era o limite. E a melhor parte? Ele continua tão divertido quanto era há décadas atrás.</p>
+    `,
+    coverImage: 'https://www.nintendo.com/eu/media/images/10_share_images/games_15/super_nintendo_5/H2x1_SNES_SuperMarioWorld_image1600w.jpg',
+    category: 'Matando a Saudade',
+    tags: ['Nostalgia', 'SNES', 'Plataforma'],
+    author: {
+      name: 'Matheus Dias',
+      avatar: '/images/matheus.jpg',
     },
+    publishedAt: '2026-08-25T14:00:00Z',
+    updatedAt: '2026-08-25T14:00:00Z',
+    featured: false,
+    type: 'retro',
+  }
 ];
 
 export function getFeaturedPost() {
@@ -221,6 +244,10 @@ export function getReviews() {
 
 export function getNews() {
   return mockPosts.filter(post => post.type === 'news').sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+}
+
+export function getRetroPosts() {
+  return mockPosts.filter(post => post.type === 'retro').sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 }
 
 export function getPostBySlug(slug: string) {

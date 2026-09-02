@@ -49,6 +49,10 @@ export default function Header() {
               NOTÍCIAS
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full" />
             </Link>
+            <Link href="/retro" className="hover:text-blue-500 transition-colors py-2 relative group">
+              MATANDO A SAUDADE
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full" />
+            </Link>
             <Link href="/sobre" className="hover:text-blue-500 transition-colors py-2 relative group">
               SOBRE
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full" />
@@ -80,10 +84,13 @@ export default function Header() {
         <nav className="flex flex-col items-center gap-8 font-oswald text-2xl tracking-widest">
           <Link href="/save" className="hover:text-blue-500 transition-colors" onClick={() => setMobileMenuOpen(false)}>SAVE</Link>
           <Link href="/noticias" className="hover:text-blue-500 transition-colors" onClick={() => setMobileMenuOpen(false)}>NOTÍCIAS</Link>
+          <Link href="/retro" className="hover:text-blue-500 transition-colors" onClick={() => setMobileMenuOpen(false)}>SAUDADE</Link>
           <Link href="/sobre" className="hover:text-blue-500 transition-colors" onClick={() => setMobileMenuOpen(false)}>SOBRE</Link>
         </nav>
       </div>
     </>
   );
+
+
 }
 

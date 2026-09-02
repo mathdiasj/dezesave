@@ -1,4 +1,4 @@
-export type ContentType = 'review' | 'news' | 'article';
+export type ContentType = 'review' | 'news' | 'article' | 'retro';
 
 export interface Post {
   id: string;

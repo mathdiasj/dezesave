@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 export function HeroCard({ post }: { post: Post }) {
   return (
-    <Link href={`/${post.type === 'review' ? 'save' : 'noticias'}/${post.slug}`} className="group relative block w-full h-[60vh] min-h-[500px] rounded-xl overflow-hidden">
+    <Link href={`/${post.type === 'review' ? 'save' : post.type === 'retro' ? 'retro' : 'noticias'}/${post.slug}`} className="group relative block w-full h-[60vh] min-h-[500px] rounded-xl overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
         style={{ backgroundImage: `url(${post.coverImage})` }}
@@ -33,7 +33,7 @@ export function HeroCard({ post }: { post: Post }) {
 
 export function PostCard({ post }: { post: Post }) {
   return (
-    <Link href={`/${post.type === 'review' ? 'save' : 'noticias'}/${post.slug}`} className="group flex flex-col gap-4">
+    <Link href={`/${post.type === 'review' ? 'save' : post.type === 'retro' ? 'retro' : 'noticias'}/${post.slug}`} className="group flex flex-col gap-4">
       <div className="relative aspect-video overflow-hidden rounded-lg">
         <div 
           className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
@@ -104,7 +104,7 @@ export function ReviewCard({ post }: { post: Post }) {
 
 export function NewsListCard({ post }: { post: Post }) {
   return (
-    <Link href={`/noticias/${post.slug}`} className="group flex gap-4 md:gap-6 border-b border-white/10 pb-6">
+    <Link href={`/${post.type === 'review' ? 'save' : post.type === 'retro' ? 'retro' : 'noticias'}/${post.slug}`} className="group flex gap-4 md:gap-6 border-b border-white/10 pb-6">
       <div className="w-1/3 md:w-1/4 shrink-0 relative aspect-video overflow-hidden rounded">
         <div 
           className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
