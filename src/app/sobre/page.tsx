@@ -51,7 +51,7 @@ export default function AboutPage() {
           <h2>Jogos Marcantes</h2>
           <ul>
             <li><strong>The Witcher 3: Wild Hunt</strong> - Pela forma como o mundo me engoliu.</li>
-            <li><strong>Silent Hill 2</strong> - Pelas cicatrizes psicológicas que carrego até hoje.</li>
+            <li><strong>Cyberpunk 2077</strong> - Por um momento importante.</li>
             <li><strong>Bloodborne</strong> - Pelo terror cósmico e o melhor combate da FromSoftware.</li>
             <li><strong>Shadow of the Colossus</strong> - Pela melancolia e grandiosidade.</li>
           </ul>
