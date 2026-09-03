@@ -1,14 +1,16 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Search, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { SearchModal } from "@/components/ui/SearchModal";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,7 +52,7 @@ export default function Header() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full" />
             </Link>
             <Link href="/retro" className="hover:text-blue-500 transition-colors py-2 relative group">
-              MATANDO A SAUDADE
+              SAUDADE
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full" />
             </Link>
             <Link href="/sobre" className="hover:text-blue-500 transition-colors py-2 relative group">
@@ -60,7 +62,11 @@ export default function Header() {
           </nav>
           
           <div className="flex items-center gap-5 z-50 relative">
-            <button className="text-white hover:text-blue-500 transition-colors" aria-label="Buscar">
+            <button 
+              className="text-white hover:text-blue-500 transition-colors" 
+              aria-label="Buscar"
+              onClick={() => setSearchOpen(true)}
+            >
               <Search size={20} strokeWidth={2.5} />
             </button>
             <button 
@@ -88,9 +94,8 @@ export default function Header() {
           <Link href="/sobre" className="hover:text-blue-500 transition-colors" onClick={() => setMobileMenuOpen(false)}>SOBRE</Link>
         </nav>
       </div>
+
+      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </>
   );
-
-
 }
-

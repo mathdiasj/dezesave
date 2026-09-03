@@ -207,24 +207,27 @@ Songs of the Past também apresentará novos monstros, mutações e uma nova arm
   },
   {
     id: '7',
-    slug: 'super-mario-world',
-    title: 'Super Mario World: A magia que não envelhece',
-    excerpt: 'Revisitando o maior clássico do Super Nintendo e como seu level design continua sendo uma aula até hoje.',
+    slug: 'pokemon-emerald',
+    title: 'Pokémon Emerald: A melhor geração ainda reina',
+    excerpt: 'Voltei a Hoenn depois de anos e entendi por que a terceira geração é tão defendida com unhas e dentes pela galera.',
     content: `
-      <p>Matar a saudade de Super Mario World é como voltar para a casa dos pais. Aquele cheiro familiar, as cores vibrantes, a trilha sonora que instantaneamente te joga de volta pros anos 90. Foi exatamente isso que senti ao ligar o emulador no último fim de semana.</p>
-      <p>O que mais impressiona em Mario World, jogando hoje em dia, é como o jogo **não envelheceu um único dia** em termos de jogabilidade. Os controles são tão precisos que muitos jogos modernos de plataforma falham em replicar. A curva de aprendizado é invisível: a primeira fase te ensina tudo o que você precisa saber sem soltar um único tutorial na tela.</p>
-      <p>E a nostalgia bateu forte na primeira vez que montei no Yoshi. Aquele som clássico do Yoshi engolindo uma maçã ou cuspindo fogo ainda é tão gratificante quanto eu lembrava. Fica claro porque a Nintendo é reverenciada por seu level design: cada segredo, cada fase da Star Road, tudo foi colocado ali com uma intenção cirúrgica.</p>
-      <p>Super Mario World não é apenas um jogo antigo, é uma cápsula do tempo de uma época onde a criatividade era o limite. E a melhor parte? Ele continua tão divertido quanto era há décadas atrás.</p>
+      <p>Tem jogos que você nunca realmente esquece. Pokémon Emerald é um deles. Ligo o emulador, ouço aquela introdução, e de repente tenho 13 anos de novo na minha escola jogando esse jogo em um Samsung Pocket.</p>
+
+      <p>Voltei a Hoenn com um olhar adulto e fiquei impressionado com o quanto o jogo ainda se sustenta. A história, que na época eu achava épica, ainda tem seus momentos. O conflito entre Team Aqua e Team Magma — dois grupos querendo literalmente destruir o mundo por motivos completamente opostos — é mais criativo do que parece à primeira vista. E a adição do Battle Frontier no pós-game é simplesmente brutal. Aquilo é conteúdo de verdade.</p>
+
+      <p>A Hoenn em si é uma região linda. Cheia de água, sim, mas cada área tem uma personalidade única. De Rustboro City às ruínas de Sky Pillar, o mapa tem uma coesão que muitas gerações modernas perderam. E os Pokémon nativos da região são até hoje alguns dos meus favoritos: Blaziken, Gardevoir, Absol, Salamence. Uma lineup absurda.</p>
+
+      <p>O que me surpreendeu foi perceber que a nostalgia não está mentindo desta vez. Pokémon Emerald não é bom "para a época". É um jogo genuinamente bem construído, com sistemas sólidos e uma curva de dificuldade que respeita o jogador. É fácil entender por que a terceira geração tem um lugar tão especial no coração de quem cresceu com ela.</p>
     `,
-    coverImage: 'https://www.nintendo.com/eu/media/images/10_share_images/games_15/super_nintendo_5/H2x1_SNES_SuperMarioWorld_image1600w.jpg',
+    coverImage: 'https://www.nintendo.com/eu/media/images/10_share_images/games_15/game_boy_advance_7/H2x1_GBA_PokemonEmerald_enGB.jpg',
     category: 'Matando a Saudade',
-    tags: ['Nostalgia', 'SNES', 'Plataforma'],
+    tags: ['Nostalgia', 'GBA', 'RPG', 'Pokémon'],
     author: {
       name: 'Matheus Dias',
       avatar: '/images/matheus.jpg',
     },
-    publishedAt: '2026-08-25T14:00:00Z',
-    updatedAt: '2026-08-25T14:00:00Z',
+    publishedAt: '2026-09-02T22:00:00Z',
+    updatedAt: '2026-09-02T14:00:00Z',
     featured: false,
     type: 'retro',
   }

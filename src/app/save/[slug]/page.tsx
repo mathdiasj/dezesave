@@ -144,18 +144,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
           {/* Sidebar / Index */}
           <aside className="lg:w-1/3 xl:w-1/4 hidden lg:block">
             <div className="sticky top-32">
-              <h3 className="font-oswald text-xl uppercase tracking-widest mb-6 flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-500 block"></span> Nesta Review
-              </h3>
-              <ul className="space-y-4 font-inter text-gray-400">
-                <li><a href="#" className="hover:text-blue-400 transition-colors">História</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition-colors">Gameplay</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition-colors">Ambientação e Mundo</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition-colors">Veredito</a></li>
-              </ul>
-              
               {/* Plataformas */}
-              <div className="mt-12">
+              <div>
                 <h3 className="font-oswald text-sm text-gray-500 uppercase tracking-widest mb-4">
                   Testado em
                 </h3>

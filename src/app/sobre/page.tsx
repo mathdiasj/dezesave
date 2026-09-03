@@ -19,13 +19,15 @@ export default function AboutPage() {
           </p>
         </header>
 
-        <div className="relative w-full aspect-video rounded-xl overflow-hidden mb-16 grayscale hover:grayscale-0 transition-all duration-700">
-          <Image 
-            src="/images/sobre-capa.jpg" 
-            alt="Setup"
-            fill
-            className="object-cover"
-          />
+        <div className="flex justify-center mb-16">
+          <div className="relative w-98 h-72 rounded-full overflow-hidden border-4 border-blue-500/30 shadow-xl shadow-blue-500/10">
+            <Image 
+              src="/images/matheus.jpg" 
+              alt="Matheus Dias"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
 
         <div className="prose prose-invert prose-blue max-w-none font-inter text-lg leading-relaxed
@@ -52,8 +54,8 @@ export default function AboutPage() {
           <ul>
             <li><strong>The Witcher 3: Wild Hunt</strong> - Pela forma como o mundo me engoliu.</li>
             <li><strong>Cyberpunk 2077</strong> - Por um momento importante.</li>
-            <li><strong>Bloodborne</strong> - Pelo terror cósmico e o melhor combate da FromSoftware.</li>
-            <li><strong>Shadow of the Colossus</strong> - Pela melancolia e grandiosidade.</li>
+            <li><strong>Bioschok Infinite</strong> - Pela história e personagens</li>
+            <li><strong>Resident Evil 4</strong> - Passei maior parte da minha infância jogando esse game</li>
           </ul>
         </div>
       </div>
