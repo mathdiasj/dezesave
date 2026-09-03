@@ -54,7 +54,7 @@ export default function AboutPage() {
           <ul>
             <li><strong>The Witcher 3: Wild Hunt</strong> - Pela forma como o mundo me engoliu.</li>
             <li><strong>Cyberpunk 2077</strong> - Por um momento importante.</li>
-            <li><strong>Bioschok Infinite</strong> - Pela história e personagens</li>
+            <li><strong>Bioshock Infinite</strong> - Pela história e personagens</li>
             <li><strong>Resident Evil 4</strong> - Passei maior parte da minha infância jogando esse game</li>
           </ul>
         </div>
