@@ -230,6 +230,32 @@ Songs of the Past também apresentará novos monstros, mutações e uma nova arm
     updatedAt: '2026-09-02T14:00:00Z',
     featured: false,
     type: 'retro',
+  },
+  {
+    id: '8',
+    slug: 'zelda-ocarina-of-time',
+    title: 'The Legend of Zelda: Ocarina of Time: O pilar que moldou o 3D no Nintendo 64',
+    excerpt: 'Revisitar Hyrule anos depois prova que o impacto de Ocarina of Time vai muito além da nostalgia: é a base do videogame moderno.',
+    content: `
+      <p>Poucos jogos têm o privilégio de mudar para sempre a história do entretenimento, e Ocarina of Time fez exatamente isso. Bastam os primeiros acordes da tela inicial em Kokiri Forest para que a sensação de aventura tome conta novamente.</p>
+
+      <p>A transição de Hyrule para o ambiente tridimensional definiu mecânicas que a indústria utiliza até hoje, como a travamento de mira (Z-Targeting) e o design de mundo expansivo. Mas além das conquistas técnicas, a jornada do Tempo mantém um ritmo narrativo impecável. A transição da inocência do Link criança para o peso do mundo na fase adulta continua sendo um dos arcos mais marcantes da franquia.</p>
+
+      <p>As dungeons de Ocarina of Time permanecem como um mestre na arte do level design. Da complexidade do polêmico Water Temple à atmosfera sombria de Shadow Temple, cada área exige raciocínio e recompensa a exploração. Os itens obtidos não servem apenas como chaves para avançar, mas transformam permanentemente a forma como você interage com o mapa.</p>
+
+      <p>Mesmo com o passar das décadas, a atmosfera melancólica e a trilha sonora inesquecível de Koji Kondo garantem que Hyrule continue viva. Ocarina of Time não é apenas um clássico do Nintendo 64; é uma obra-prima atemporal que estabeleceu o padrão do que um jogo de aventura deve ser.</p>
+    `,
+    coverImage: 'https://www.einerd.com/wp-content/uploads/2026/06/zelda-ocarina-e1784729367240.webp',
+    category: 'Matando a Saudade',
+    tags: ['Nostalgia', 'N64', 'Aventura', 'Zelda'],
+    author: {
+      name: 'Matheus Dias',
+      avatar: '/images/matheus.jpg',
+    },
+    publishedAt: '2026-09-05T20:00:00Z',
+    updatedAt: '2026-09-05T20:00:00Z',
+    featured: true,
+    type: 'retro',
   }
 ];
 

@@ -126,6 +126,15 @@ export function NewsListCard({ post }: { post: Post }) {
         <p className="text-gray-400 font-inter text-sm line-clamp-1 mt-2 hidden md:block">
           {post.excerpt}
         </p>
+        {post.tags && post.tags.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 mt-2">
+            {post.tags.slice(0, 4).map(tag => (
+              <span key={tag} className="text-[11px] font-inter text-gray-400 border border-white/10 px-1.5 py-0.5 rounded">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </Link>
   );

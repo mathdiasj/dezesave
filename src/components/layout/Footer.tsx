@@ -26,6 +26,7 @@ export default function Footer() {
             <ul className="space-y-4 font-inter text-sm text-gray-300">
               <li><Link href="/save" className="hover:text-blue-500 transition-colors">Save Point</Link></li>
               <li><Link href="/noticias" className="hover:text-blue-500 transition-colors">Notícias</Link></li>
+              <li><Link href="/retro" className="hover:text-blue-500 transition-colors">Matando a Saudade</Link></li>
               <li><Link href="/sobre" className="hover:text-blue-500 transition-colors">Sobre</Link></li>
             </ul>
           </div>

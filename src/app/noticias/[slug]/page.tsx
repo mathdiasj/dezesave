@@ -36,13 +36,20 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
       {/* Header */}
       <header className="container mx-auto px-4 lg:px-8 mb-12 max-w-5xl">
         <div className="flex items-center gap-2 mb-6">
-          <span className="bg-blue-600 text-white font-oswald px-3 py-1 text-sm tracking-wider uppercase">
+          <Link 
+            href="/noticias"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-oswald px-3 py-1 text-sm tracking-wider uppercase transition-colors"
+          >
             {post.category}
-          </span>
+          </Link>
           {post.tags?.map(t => (
-            <span key={t} className="text-gray-400 font-inter text-xs border border-white/20 px-2 py-1 rounded">
+            <Link 
+              key={t} 
+              href={`/noticias?filter=${encodeURIComponent(t)}`}
+              className="text-gray-400 hover:text-white hover:border-blue-500 transition-colors font-inter text-xs border border-white/20 px-2 py-1 rounded"
+            >
               {t}
-            </span>
+            </Link>
           ))}
         </div>
         

@@ -1,9 +1,8 @@
 import { getRetroPosts, getLatestPosts } from "@/lib/data";
-import { NewsListCard } from "@/components/ui/Cards";
 import { Metadata } from "next";
 import Link from "next/link";
-import { Search } from "lucide-react";
 import { FadeIn } from "@/components/ui/FadeIn";
+import { RetroFilter } from "@/components/ui/RetroFilter";
 
 export const metadata: Metadata = {
   title: "Matando a Saudade - dezeSAVE",
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
 export default function RetroPage() {
   const retro = getRetroPosts();
   const latestPosts = getLatestPosts(5);
-  const categories = ["Consoles", "Arcade", "8-bit", "16-bit", "32-bit", "Clássicos", "Retrô"];
 
   return (
     <div className="pt-32 pb-20 container mx-auto px-4 lg:px-8">
@@ -29,33 +27,9 @@ export default function RetroPage() {
       </FadeIn>
 
       <div className="flex flex-col lg:flex-row gap-12">
-        {/* Main Feed */}
+        {/* Main Feed with interactive filter & search */}
         <div className="lg:w-2/3 xl:w-3/4">
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-8 pb-4 border-b border-white/10">
-            <div className="flex flex-wrap gap-2">
-              {categories.slice(0, 5).map(cat => (
-                <button key={cat} className="text-sm font-oswald tracking-widest text-gray-400 hover:text-white transition-colors">
-                  {cat}
-                </button>
-              ))}
-            </div>
-            
-            {/* Fake Search */}
-            <div className="relative w-full md:w-auto">
-              <input 
-                type="text" 
-                placeholder="Buscar clássicos..." 
-                className="w-full md:w-64 bg-white/5 border border-white/10 rounded px-4 py-2 text-sm font-inter text-white outline-none focus:border-blue-500 transition-colors"
-              />
-              <Search size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500" />
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-8">
-            {retro.map(post => (
-              <NewsListCard key={post.id} post={post} />
-            ))}
-          </div>
+          <RetroFilter posts={retro} />
           
           <div className="mt-12 flex justify-center">
             <button className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors font-oswald tracking-widest px-8 py-3 text-sm rounded">
@@ -93,4 +67,3 @@ export default function RetroPage() {
     </div>
   );
 }
-

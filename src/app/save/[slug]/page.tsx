@@ -34,13 +34,20 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
       {/* Header */}
       <header className="container mx-auto px-4 lg:px-8 mb-12">
         <div className="flex items-center gap-2 mb-6">
-          <span className="bg-blue-600 text-white font-oswald px-3 py-1 text-sm tracking-wider uppercase">
+          <Link 
+            href="/save"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-oswald px-3 py-1 text-sm tracking-wider uppercase transition-colors"
+          >
             REVIEW
-          </span>
-          {post.genre?.map(g => (
-            <span key={g} className="text-gray-400 font-inter text-xs border border-white/20 px-2 py-1 rounded">
+          </Link>
+          {(post.genre && post.genre.length > 0 ? post.genre : post.tags)?.map(g => (
+            <Link 
+              key={g} 
+              href={`/save?filter=${encodeURIComponent(g)}`}
+              className="text-gray-400 hover:text-white hover:border-blue-500 transition-colors font-inter text-xs border border-white/20 px-2 py-1 rounded"
+            >
               {g}
-            </span>
+            </Link>
           ))}
         </div>
         
